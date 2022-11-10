@@ -1,3 +1,4 @@
+import { Link } from '@remix-run/react';
 
 export default function NotesList({ notes }) {
   return (
@@ -6,8 +7,10 @@ export default function NotesList({ notes }) {
       <ul>
         {notes.map((note) => (
           <li key={note.id}>
+            <Link to={`/notes/${note.id}`}>
             <h2>{note.title}</h2>
             <p>{note.content}</p>
+            </Link>
           </li>
         ))}
       </ul>
