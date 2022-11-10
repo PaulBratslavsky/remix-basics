@@ -3,7 +3,6 @@ import { json } from "@remix-run/node";
 import { getStoredNotes } from "~/data/notes";
 import NotesList from "~/component/NotesList";
 
-
 export async function loader() {
   const { notes } = await getStoredNotes();
   console.log(notes);

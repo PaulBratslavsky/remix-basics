@@ -45,10 +45,7 @@ export async function action({ request }) {
   return redirect("/notes");
 }
 
-
 export default function NotesRoute() {
   const errors = useActionData();
-
   return <NewNote errors={errors} />
-
 }
