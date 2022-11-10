@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(232, 48, 16);
+  background-color: #280101;
+}
+
+a {
+  color: rgb(243, 60, 243);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(243, 193, 12);
+  text-decoration: underline;
+  transition: 4s color cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+fieldset {
+  border: 0;
+}
+
+#note-form {
+  max-width: 30rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: rgb(40, 3, 3);
+  box-shadow: 0 1px 8px red;
+}
+
+#note-form label,
+#note-form input,
+#note-form textarea {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#note-form label {
+  margin-bottom: 0.5rem;
+  color: red;
+  font-weight: bold;
+}
+
+#note-form input,
+#note-form textarea {
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem 0.25rem;
+  background-color: rgb(255, 102, 0);
+  border: none;
+  border-radius: 2px;
+  color:rgb(31, 22, 22);
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.form-actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 24px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.form-actions button:hover {
+  background-color: black;
+}
+
+.form-actions button:disabled {
+  background-color: black;
+  color: black;
+  cursor: not-allowed;
+}
