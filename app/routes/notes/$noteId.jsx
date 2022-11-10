@@ -2,6 +2,13 @@ import { useCatch, useLoaderData, Link } from "@remix-run/react";
 import { json } from "@remix-run/node";
 import { getStoredNotes } from "~/data/notes";
 
+export function meta({ data }) {
+  return {
+    title: data.title,
+    description: "A better way to track your notes",
+  };
+}
+
 export async function loader({ params }) {
   const { notes } = await getStoredNotes();
 

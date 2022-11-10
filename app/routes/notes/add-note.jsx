@@ -22,6 +22,13 @@ const errorsTemplate = [
   },
 ];
 
+export function meta() {
+  return {
+    title: "Add Note",
+    description: "A better way to track your notes",
+  };
+}
+
 export async function action({ request }) {
   const formData = await request.formData();
   const nodeData = Object.fromEntries(formData);
@@ -37,9 +44,6 @@ export async function action({ request }) {
   await saveNote(note);
   return redirect("/notes");
 }
-
-
-
 
 
 export default function NotesRoute() {
