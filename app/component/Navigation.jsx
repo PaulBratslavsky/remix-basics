@@ -11,6 +11,9 @@ function MainNavigation() {
         <li className="nav-item">
           <NavLink to="/notes">My Notes</NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink to="/notes/add-note">Add Note</NavLink>
+        </li>
       </ul>
     </nav>
   );
